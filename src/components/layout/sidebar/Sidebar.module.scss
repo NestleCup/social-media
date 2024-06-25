@@ -1,12 +1,15 @@
 .sidebar {
-  @apply flex items-center flex-col justify-between border-solid border-r-2 py-5;
+  @apply flex items-center flex-col justify-between border-solid border-r-2 py-layout;
   border-color: rgba(255, 255, 255, 0.1);
   a {
     @apply mb-6 block;
+    &.active > svg {
+      @apply text-red-400;
+    }
   }
   svg {
     @apply text-[#7c7275] duration-300 ease-in-out transition-colors cursor-pointer;
-    &:hover {
+    &.hover {
       @apply text-white;
     }
   }
