@@ -9,7 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        white: '#efeff3',
         border: 'rgba(255, 255, 255, 0.1)',
+      },
+      padding: {
+        layout: '1.25rem',
       },
     },
   },
